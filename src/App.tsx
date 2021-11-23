@@ -1,7 +1,7 @@
-import { GlobalStyle } from "./styles/GlobalStyle";
-import { Routes } from "./routes/Routes";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./styles/theme";
+import { GlobalStyle } from './styles/GlobalStyle'
+import { Routes } from './routes/Routes'
+import { ThemeProvider } from 'styled-components'
+import { theme } from './styles/theme'
 
 export const App = () => {
   return (
@@ -11,7 +11,7 @@ export const App = () => {
         <Routes />
       </ThemeProvider>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App

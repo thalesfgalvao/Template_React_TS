@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Home } from "../pages/Home/Home";
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Home } from '../pages/Home/Home'
 
 export const Routes = () => {
   return (
@@ -8,5 +8,5 @@ export const Routes = () => {
         <Route path="/" component={Home} exact />
       </Switch>
     </BrowserRouter>
-  );
-};
+  )
+}
