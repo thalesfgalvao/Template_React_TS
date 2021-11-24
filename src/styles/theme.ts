@@ -1,5 +1,5 @@
 export const theme = {
-  backgorund: {
+  background: {
     dark: '#0F0F26',
     light: '#FFFFFF'
   },

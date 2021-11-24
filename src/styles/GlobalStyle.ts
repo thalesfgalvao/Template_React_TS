@@ -1,17 +1,34 @@
+import { css } from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &::before,
+    &::after {
+      box-sizing: inherit;
     }
-    html{
-        font-size: 62.5%;
+  }
+  ${({ theme }) => css`
+    html {
+      font-size: 62.5%;
     }
-    body{
-        background-color: #282c34;
-        font-family: 'Roboto', sans-serif;
+    body {
+      font-family: ${theme.};
+      font-size: ${theme.fonts.sizes.medium};
+      background-color: ${theme.background.dark};
     }
+    ol,
+    li {
+      list-style: none;
+    }
+    button {
+      mouse: pointer;
+    }
+  `}
 `
