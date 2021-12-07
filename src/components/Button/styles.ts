@@ -19,7 +19,7 @@ export const Button = styled(AntdButton)<IButtonProps>`
     && {
       background-color: ${theme.colors.success};
       color: ${theme.colors.white};
-      padding: 0rem 5rem 0rem 5rem;
+      width: 15rem;
       border-radius: 2rem;
       border: none;
       transition: 200ms ease-in;
