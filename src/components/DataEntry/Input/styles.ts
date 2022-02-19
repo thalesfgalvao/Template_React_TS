@@ -10,11 +10,8 @@ export const Input = styled(AntdInput)<IErrors>`
     ${({ theme, error }) => css`
       width: 100%;
       font-size: ${theme.fonts.sizes.small};
-      height: 3.4rem;
-      border-radius: 0.8rem;
-      padding: 1rem;
-      color: ${theme.colors.grey};
-      padding: 0rem 3rem 0rem 3rem;
+      border-radius: ${theme.border.radius.default};
+      color: ${theme.colors.darkGrey};
 
       &:hover {
         outline: none;
@@ -28,7 +25,7 @@ export const Input = styled(AntdInput)<IErrors>`
   }
 `
 
-export const Title = styled.p`
+export const Label = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.small};
     color: ${theme.colors.darkGrey};

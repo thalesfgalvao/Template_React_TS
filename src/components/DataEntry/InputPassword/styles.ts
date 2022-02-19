@@ -10,11 +10,9 @@ export const InputPassword = styled(AntdInput.Password)<IErrors>`
     ${({ theme, error }) => css`
       width: 100%;
       font-size: ${theme.fonts.sizes.small};
-      height: 3.4rem;
-      border-radius: 0.8rem;
-      padding: 1rem;
-      color: ${theme.colors.grey};
-      padding: 0rem 1rem 0rem 3rem;
+      border-radius: ${theme.border.radius.default};
+      color: ${theme.colors.darkGrey};
+      background: none;
 
       &:hover {
         outline: none;
@@ -28,7 +26,7 @@ export const InputPassword = styled(AntdInput.Password)<IErrors>`
   }
 `
 
-export const Title = styled.p`
+export const Label = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.small};
     color: ${theme.colors.darkGrey};

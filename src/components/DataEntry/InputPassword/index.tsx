@@ -8,15 +8,15 @@ export interface IProps extends InputProps {
   label?: string
 }
 
-const Input = ({ error, label, name, ...rest }: IProps) => {
+const InputPassword = ({ error, label, name, ...rest }: IProps) => {
   return (
     <>
       <Tooltip placement="topLeft" title={error ?? null}>
-        <S.Title>{label}</S.Title>
-        <S.Input error={error} name={name} id={name} {...rest} />
+        <S.Label>{label}</S.Label>
+        <S.InputPassword error={error} name={name} id={name} {...rest} />
       </Tooltip>
     </>
   )
 }
 
-export default Input
+export default InputPassword

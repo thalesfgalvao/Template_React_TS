@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import * as S from './styles'
-import Input from '../../components/Input'
+import { useState } from 'react'
 import { useFormik } from 'formik'
 import { SignInSchema } from '../../schemas/SignIn'
-import { Button } from '../../components/Button'
-import { Link } from 'react-router-dom'
-import InputPassword from '../../components/InputPassword'
+import Input from '../../components/DataEntry/Input'
+import Button from '../../components/DataEntry/Button'
+import InputPassword from '../../components/DataEntry/InputPassword'
 
 const Login = () => {
   const [validateOnChange, setValidateOnChange] = useState(false)
@@ -40,7 +39,6 @@ const Login = () => {
             <Input
               label="Email"
               placeholder="Type your email"
-              style={{ marginBottom: '2rem' }}
               error={formik.errors.email}
               {...formik.getFieldProps('email')}
             />
@@ -48,7 +46,6 @@ const Login = () => {
               label="Password"
               type="password"
               placeholder="Type your password"
-              style={{ marginBottom: '3rem' }}
               error={formik.errors.password}
               {...formik.getFieldProps('password')}
             />
@@ -56,9 +53,6 @@ const Login = () => {
               <Button htmlType="submit" onClick={handleLogin}>
                 Login
               </Button>
-              <Link to="/RecoverPassword">
-                <S.ForgotPassword>Forgot your password?</S.ForgotPassword>
-              </Link>
             </S.BottomFormLoginElements>
           </S.FormLogin>
           <S.CopyrightWrapper>

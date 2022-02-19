@@ -1,12 +1,11 @@
 import * as S from './styles'
-import React from 'react'
 import { ButtonProps } from 'antd'
 
 export interface IButtonProps extends ButtonProps {
   children: string
   kind?: 'primary' | 'secondary'
 }
-export const Button = ({
+const Button = ({
   children,
   type,
   kind = 'primary',
@@ -18,3 +17,5 @@ export const Button = ({
     </S.Button>
   )
 }
+
+export default Button

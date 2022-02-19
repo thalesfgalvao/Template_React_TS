@@ -29,6 +29,17 @@ export const Wrapper = styled.main`
   `}
 `
 
+export const LoginCard = styled(Card)`
+  ${({ theme }) => css`
+    background: none;
+    color: ${theme.colors.darkGrey};
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  `}
+`
+
 export const TitleLogin = styled.h1`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.medium};
@@ -39,22 +50,11 @@ export const TitleLogin = styled.h1`
 
 export const FormLogin = styled(Form)`
   ${({ theme }) => css`
-    font-size: ${theme.fonts.sizes.xsmall};
-    margin-top: 4rem;
-  `};
-`
-
-export const LoginCard = styled(Card)`
-  ${({ theme }) => css`
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.darkGrey};
-    max-width: 50rem;
     display: flex;
     flex-direction: column;
-    border-radius: 2rem;
-    padding: 5rem 5rem 2rem 5rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 0.2rem 0.1rem 0.2rem 0.1rem;
-  `}
+    gap: 2rem;
+    font-size: ${theme.fonts.sizes.xsmall};
+  `};
 `
 
 export const BottomFormLoginElements = styled.div`
@@ -83,12 +83,12 @@ export const CopyrightWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 2rem;
 `
 
 export const LoginPageText = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.fonts.sizes.xsmall};
-    color: ${theme.colors.lightGrey};
+    color: ${theme.colors.grey};
   `}
 `

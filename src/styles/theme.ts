@@ -1,21 +1,36 @@
 export default {
   colors: {
-    xLightSuccess: '#d7f5e8',
-    lightSuccess: '#43cc8b',
+    default: '#F2F2F2',
     success: '#6AE058',
     darkSuccess: '#5ABF4B',
-    xLightWarning: '#91b8e5',
-    lightWarning: '#d28488',
     warning: '#E09B35',
+    lightError: '#d28488',
     error: '#E33F36',
     white: '#FFFFFF',
     black: '#000000',
-    xlightBlue: '#deeafb',
+    blue: '#002791',
     lightBlue: '#91b8e5',
+    minWhite: '#F7F7F5',
     lightGrey: '#d3d6e0',
     grey: '#B4B6BF',
-    darkGrey: '#7A7C82',
-    minWhite: '#F7F7F5'
+    darkGrey: '#7A7C82'
+  },
+  layers: {
+    base: 10,
+    overlay: 20,
+    onTop: 30
+  },
+  transitions: {
+    default: '0.3s ease-in-out',
+    quick: '0.1s ease-in-out'
+  },
+  border: {
+    radius: {
+      default: '0.5rem',
+      small: '0.1rem',
+      big: '0.8rem',
+      huge: '1.4rem'
+    }
   },
   fonts: {
     family: {
@@ -27,11 +42,6 @@ export default {
       normal: 400,
       medium: 500,
       bold: 700
-    },
-    layers: {
-      base: 10,
-      overlay: 20,
-      onTop: 30
     },
     sizes: {
       xxsmall: '0.8rem',
@@ -53,10 +63,6 @@ export default {
       xxlarge: '4.8rem',
       huge: '5.6rem',
       xhuge: '6.4rem'
-    },
-    transitions: {
-      default: '0.3s ease-in-out',
-      quick: '0.1s ease-in-out'
     }
   }
 } as const

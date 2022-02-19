@@ -4,7 +4,7 @@ export type HomeProps = {
   children: React.ReactNode
 }
 
-export const Home = () => {
+export const Dashboard = () => {
   return (
     <S.Wrapper>
       <S.Container>Início</S.Container>
@@ -12,4 +12,4 @@ export const Home = () => {
   )
 }
 
-export default Home
+export default Dashboard
